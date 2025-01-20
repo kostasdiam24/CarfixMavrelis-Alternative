@@ -6386,8 +6386,6 @@ textarea.form-control-lg {
 .bg-fourthry {
     background-color: #070f1c !important;
 }
-
-
 .bg-success {
     background-color:#198754 !important
 }
@@ -6404,8 +6402,9 @@ textarea.form-control-lg {
     background-color:#6C7293 !important
 }
 .bg-dark {
-    background-color:#000 !important
+    background-color:#000 !important;
 }
+
 .bg-body {
     background-color:#000 !important
 }
@@ -9633,4 +9632,46 @@ textarea.form-control-lg {
 .service-item {
     padding: 1rem;
     box-sizing: border-box;
+}
+
+.borderForServices {
+    border-radius: 10%;
+    border: 1px solid darkred;
+}
+
+.bg-dark2 {
+    background-color:#0b0f2c !important;
+}
+.bg-dark3 {
+    background-color:#101642 !important;
+}
+.bg-dark4 {
+    background-color:#18275f !important;
+}
+
+@media (max-width:500px) {
+    .container-xxl {
+        border-radius: 0% !important;
+        border: none !important;
+    }
+    .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+    .alignImgToCen {
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width:500px) {
+    .container-xxl2 {
+        margin-top: 20px !important;
+        border-radius: 0% !important;
+        border: 1px solid darkred !important;
+    }
+    .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
 }
