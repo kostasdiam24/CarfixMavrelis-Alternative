@@ -6350,7 +6350,7 @@ textarea.form-control-lg {
     color:#dc3545 !important
 }
 .text-light {
-    color:#6C7293 !important
+    color: #bbbbbb !important
 }
 .text-dark {
     color:#000 !important
@@ -9610,7 +9610,9 @@ textarea.form-control-lg {
     max-width: 500px;
     padding: 0;
 }
-
+.bg-darkred {
+    background-color: darkred;
+}
 .startImg {
     border-radius: 10%;
 }
