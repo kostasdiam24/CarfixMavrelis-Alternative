@@ -44,11 +44,12 @@ body {
     font-size:1rem;
     font-weight:400;
     line-height:1.5;
-    color:#6C7293;
+    color:#bbbbbb;
     background-color:#000;
     -webkit-text-size-adjust:100%;
     -webkit-tap-highlight-color:rgba(0,0,0,0)
 }
+
 hr {
     margin:1rem 0;
     color:inherit;
@@ -166,11 +167,11 @@ sup {
     top:-.5em
 }
 a {
-    color:#f02a2a;
+    color: white;
     text-decoration:none
 }
 a:hover {
-    color:#2d4492
+    color:#f02a2a
 }
 a:not([href]):not([class]),a:not([href]):not([class]):hover {
     color:inherit;
@@ -2360,7 +2361,7 @@ textarea.form-control-lg {
 }
 .btn-primary:hover {
     color:#fff;
-    background-color:#c81313;
+    background-color:#000;
     border-color:#bc1212
 }
 .btn-check:focus+.btn-primary,.btn-primary:focus {
@@ -6405,6 +6406,15 @@ textarea.form-control-lg {
     background-color:#000 !important;
 }
 
+.bg-dark2 {
+    background-color:#0b0f2c !important;
+}
+.bg-dark3 {
+    background-color:#101642 !important;
+}
+.bg-dark4 {
+    background-color:#18275f !important;
+}
 .bg-body {
     background-color:#000 !important
 }
@@ -9591,7 +9601,10 @@ textarea.form-control-lg {
     background-color: #050b12 !important;
     border-bottom: solid 2px #304b7a;
 }
-
+.navbar-black {
+    background-color: #000 !important;
+    border-bottom: solid 2px darkred;
+}
 .navImg {
     width: 35%;
     max-width: 500px;
@@ -9608,17 +9621,19 @@ textarea.form-control-lg {
 }
 
 .smallBoxes {
-    border: solid 3px #304b7a;
+    border: solid 3px darkred;
     padding: 15px 2px;
     border-radius: 20%;
 }
-
+/*color #304b7a*/
 .bigBoxes {
     border: solid 0px #304b7a;
     border-radius: 5%;
     padding: 0;
 }
-    
+.border-red {
+    border-top: 2px solid red;
+}
 
 
 #extraInServices {
@@ -9639,15 +9654,6 @@ textarea.form-control-lg {
     border: 1px solid darkred;
 }
 
-.bg-dark2 {
-    background-color:#0b0f2c !important;
-}
-.bg-dark3 {
-    background-color:#101642 !important;
-}
-.bg-dark4 {
-    background-color:#18275f !important;
-}
 
 @media (max-width:500px) {
     .container-xxl {
