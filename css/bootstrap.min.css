@@ -361,13 +361,14 @@ progress {
 
 }
 .display-2 {
-    font-size:calc(1.575rem + 3.9vw);
+    font-size:calc(1.575rem + 2.9vw);
     font-weight:600;
     line-height:1.2
+    
 }
 @media (min-width: 1200px) {
     .display-2 {
-    font-size:4.5rem
+    font-size: 3.5rem
 }
 
 }
@@ -3190,7 +3191,7 @@ textarea.form-control-lg {
     flex-wrap:wrap;
     padding-left:0;
     margin-bottom:0;
-    list-style:none
+    list-style:none;
 }
 .nav-link {
     display:block;
@@ -3277,6 +3278,7 @@ textarea.form-control-lg {
     padding-top:.5rem;
     padding-bottom:.5rem
 }
+
 .navbar>.container,.navbar>.container-fluid,.navbar>.container-sm,.navbar>.container-md,.navbar>.container-lg,.navbar>.container-xl,.navbar>.container-xxl {
     display:flex;
     flex-wrap:inherit;
@@ -3311,21 +3313,40 @@ textarea.form-control-lg {
 .navbar-collapse {
     flex-basis:100%;
     flex-grow:1;
-    align-items:center
+    align-items:center;
 }
+
 .navbar-toggler {
-    padding:.25rem .75rem;
-    font-size:1.25rem;
-    line-height:1;
-    background-color:transparent;
-    border:1px solid transparent;
-    border-radius:0px;
-    transition:box-shadow 0.15s ease-in-out
+    background-color: black !important; /* Keep it visible */
+    border: 2px solid darkred; /* Your choice */
+    padding: 5px 10px; /* Make it clickable */
+    margin-left: 15px;
 }
+
+.navbar-toggler-icon {
+    display: block !important; /* Ensures visibility */
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 @media (prefers-reduced-motion: reduce) {
     .navbar-toggler {
     transition:none
 }
+
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: #000; /* Adjust background color */
+    }
+}
+
+
 
 }
 .navbar-toggler:hover {
@@ -3343,7 +3364,8 @@ textarea.form-control-lg {
     vertical-align:middle;
     background-repeat:no-repeat;
     background-position:center;
-    background-size:100%
+    background-size:100%;
+    filter: invert(1);
 }
 .navbar-nav-scroll {
     max-height:var(--bs-scroll-height, 75vh);
@@ -3352,7 +3374,7 @@ textarea.form-control-lg {
 @media (min-width: 576px) {
     .navbar-expand-sm {
     flex-wrap:nowrap;
-    justify-content:flex-start
+    justify-content:flex-start;
 }
 .navbar-expand-sm .navbar-nav {
     flex-direction:row
@@ -5103,7 +5125,7 @@ textarea.form-control-lg {
     border:0;
     border-top:10px solid transparent;
     border-bottom:10px solid transparent;
-    opacity:.5;
+    opacity:.8;
     transition:opacity 0.6s ease
 }
 @media (prefers-reduced-motion: reduce) {
@@ -9610,7 +9632,7 @@ textarea.form-control-lg {
     border-bottom: solid 2px darkred;
 }
 .navImg {
-    width: 35%;
+    width: 50%;
     max-width: 500px;
     padding: 0;
 }
@@ -9647,9 +9669,10 @@ textarea.form-control-lg {
 #extraInServices {
     color: red;
     font-weight: bold;
-    background-color: black;
+    background-color: dark;
     text-align: center;
-    border: 2px;
+    border: 1px solid red;
+    border-radius: 15px;
 }
 
 .service-item {
@@ -9837,4 +9860,64 @@ textarea.form-control-lg {
   
 .mapInContact:hover {
     opacity: 50%;
+}
+
+/* updated service*/
+
+.containerInSrvc {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.sectionInSrvc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.sectionInSrvc img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+.sectionInSrvc .text {
+    margin: 70px;
+    border: 2px solid darkred;
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+}
+.reverseInSrvc {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .sectionInSrvc {
+      flex-direction: column !important;
+      text-align: center;
+    }
+    .sectionInSrvc img {
+      width: 110%;
+    }
+    .sectionInSrvc .text {
+      width: 110%;
+    }
+    .sectionInSrvc .text .textLeft {
+        text-align: left;
+    }
+
+  }
+  
+.bgForOl {
+    background-color: black;
+    border-radius: 20px;
+    display: inline-flex;
+    padding: 5px 15px; /* Adds spacing inside */
+}
+
+.inHeaderH1 {
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    border-radius: 20px;
 }

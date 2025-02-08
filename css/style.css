@@ -102,7 +102,7 @@
 
     .navbar .navbar-nav {
         margin-top: 8px;
-        border-top: 1px solid var(--light);
+        border-top: 1px solid darkred;
     }
 }
 
@@ -136,9 +136,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .85);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
+
+
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -154,7 +156,7 @@
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 450px;
+        min-height: 500px;
     }
     
     #header-carousel .carousel-item img {
@@ -163,10 +165,19 @@
         height: 100%;
         object-fit: cover;
     }
+
+    .carousel-caption {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .20), rgba(0, 0, 0, .20)), url(../img/front\ benz\ wide.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -326,4 +337,20 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+
+.navbar-toggler {
+    background-color: black !important; 
+    border: 2px solid darkred; 
+    padding: 5px 10px; 
+}
+
+.navbar-toggler-icon {
+    display: block !important; /* Force it to appear */
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>') !important;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
