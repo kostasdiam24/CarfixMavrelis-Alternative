@@ -10011,7 +10011,7 @@ textarea.form-control-lg {
 .stats-section {
     background-color: #000; /* Σκούρο φόντο */
     color: white; /* Λευκό κείμενο */
-    padding: 50px 20px;
+    padding: 50px 10px;
     text-align: center;
     border: 2px solid darkred;
     border-radius: 20px;
