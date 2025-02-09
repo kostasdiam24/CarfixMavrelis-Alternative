@@ -9756,6 +9756,7 @@ textarea.form-control-lg {
     flex-wrap: wrap;
     justify-content: center;
     background-color: black;
+    text-align: center;
     border: 2px solid darkred;
     padding: 20px;
     border-radius: 10px;
@@ -9803,18 +9804,7 @@ textarea.form-control-lg {
 }
 
 /* Responsive: Stack elements vertically on small screens */
-@media (max-width: 768px) {
-    .contact-container2 {
-        flex-direction: column; /* Stacks elements vertically */
-        height: auto; /* Adjusts height automatically */
-        padding: 20px 0;
-    }
 
-    .contact-text, 
-    .contact-info {
-        width: 100%; /* Ensures full width for stacking */
-    }
-}
 
 .contact-text {
     flex: 1;
@@ -9881,7 +9871,19 @@ textarea.form-control-lg {
         margin-top: 10px;
     }
 }
+@media (max-width: 768px) {
+    .contact-container2 {
+        flex-direction: column; /* Stacks elements vertically */
+        height: auto; /* Adjusts height automatically */
+        padding: 20px 0;
+    }
 
+    .contact-text, 
+    .contact-info {
+        width: 100%; /* Ensures full width for stacking */
+        align-items: center;
+    }
+}
 .seeGallery {
     background-color: darkred;
     color: white;
@@ -10090,7 +10092,7 @@ textarea.form-control-lg {
 
 ---------
 
-.deepseek {
+.contactDiv2 {
     margin: 0;
     padding: 0;
     display: flex;
@@ -10123,5 +10125,47 @@ textarea.form-control-lg {
 @media (max-width: 480px) {
     .contentD {
         font-size: 14px;
+    }
+}
+
+.Ccontainer {
+    border: 2px solid darkred;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    background: #000;
+}
+.Ctitle {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+.Cinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Cinfo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 48%;
+    margin-bottom: 15px;
+}
+.Cicon {
+    font-size: 20px;
+    color: red;
+}
+@media (max-width: 600px) {
+    .Cinfo {
+        flex-direction: column;
+    }
+    .Cinfo-item {
+        width: 100%;
+    }
+    .Ccontainer {
+        border: none;
     }
 }
