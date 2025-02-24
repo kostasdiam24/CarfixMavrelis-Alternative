@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #EB1616;
+    --primary: gray;
     --secondary: #0044ff;
     --light: #6C7293;
     --dark: #000000;
@@ -73,11 +73,11 @@
 }
 
 .navbar .navbar-nav .nav-link {
-    margin-right: 30px;
-    padding: 40px 0;
+    margin-right: 20px;
+    padding: 0px 0;
     color: var(--light);
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     text-transform: uppercase;
     outline: none;
@@ -102,7 +102,7 @@
 
     .navbar .navbar-nav {
         margin-top: 8px;
-        border-top: 1px solid darkred;
+        border-top: 1px solid darkgray;
     }
 }
 
@@ -354,3 +354,48 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+/* Top Info Bar Styling */
+.top-info-bar {
+    background-color: #575757; /* Light yellow */
+    color: white;
+    font-size: 19px;
+    padding: 8px 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Hide Info Bar on Mobile */
+@media (max-width: 991px) {
+    .top-info-bar {
+        display: none;
+    }
+}
+
+/* Navbar Layout */
+.navbar {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust Navbar Container */
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+/* Fix Navbar Position */
+.sticky-top {
+    top: 0;
+    z-index: 1050;
+}
+

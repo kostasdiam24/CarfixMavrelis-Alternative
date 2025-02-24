@@ -2361,13 +2361,13 @@ textarea.form-control-lg {
 }
 .btn-primary {
     color:#fff;
-    background-color:#EB1616;
-    border-color:#EB1616
+    background-color: darkgray;
+    border-color: gray
 }
 .btn-primary:hover {
     color:#fff;
     background-color:#000;
-    border-color:#bc1212
+    border-color: gray
 }
 .btn-check:focus+.btn-primary,.btn-primary:focus {
     color:#fff;
@@ -3196,7 +3196,7 @@ textarea.form-control-lg {
 .nav-link {
     display:block;
     padding:.5rem 1rem;
-    color:#EB1616;
+    color: rgb(207, 207, 207);
     transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3206,10 +3206,10 @@ textarea.form-control-lg {
 
 }
 .nav-link:hover,.nav-link:focus {
-    color:#bc1212
+    color: #c0c0c0
 }
 .nav-link.disabled {
-    color:#6c757d;
+    color: #c0c0c0;
     pointer-events:none;
     cursor:default
 }
@@ -3228,12 +3228,12 @@ textarea.form-control-lg {
     isolation:isolate
 }
 .nav-tabs .nav-link.disabled {
-    color:#6c757d;
+    color:#c0c0c0;
     background-color:transparent;
     border-color:transparent
 }
 .nav-tabs .nav-link.active,.nav-tabs .nav-item.show .nav-link {
-    color:#495057;
+    color:#c0c0c0;
     background-color:#000;
     border-color:#dee2e6 #dee2e6 #000
 }
@@ -3288,7 +3288,7 @@ textarea.form-control-lg {
 .navbar-brand {
     padding-top:.3125rem;
     padding-bottom:.3125rem;
-    margin-right:1rem;
+    margin-right: 0.2 rem;
     font-size:1.25rem;
     white-space:nowrap
 }
@@ -3318,7 +3318,7 @@ textarea.form-control-lg {
 
 .navbar-toggler {
     background-color: black !important; /* Keep it visible */
-    border: 2px solid darkred; /* Your choice */
+    border: 2px solid #575757; /* Your choice */
     padding: 5px 10px; /* Make it clickable */
     margin-left: 15px;
 }
@@ -3756,7 +3756,7 @@ textarea.form-control-lg {
 
 }
 .accordion-button:not(.collapsed) {
-    color:#d41414;
+    color: darkgray;
     background-color:#fde8e8;
     box-shadow:inset 0 -1px 0 rgba(0,0,0,0.125)
 }
@@ -9630,7 +9630,7 @@ textarea.form-control-lg {
 }
 .navbar-black {
     background-color: #000 !important;
-    border-bottom: solid 2px darkred;
+    border-bottom: solid 2px darkgray;
 }
 .navImg {
     width: 50%;
@@ -9638,7 +9638,7 @@ textarea.form-control-lg {
     padding: 0;
 }
 .bg-darkred {
-    background-color: darkred;
+    background-color: darkgray;
 }
 .startImg {
     border-radius: 10%;
