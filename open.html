@@ -57,50 +57,102 @@
 
     <!-- Navbar Start -->
     <nav
-      class="navbar navbar-expand-lg bg-dark navbar-black sticky-top py-lg-0 px-lg-5 wow fadeIn"
-      data-wow-delay="0.1s"
+      class="navbar navbar-expand-lg bg-dark navbar-black sticky-top py-lg-0 px-lg-5"
     >
-      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <img class="navImg" src="img/wideLogo.png" alt="" />
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
+      <!-- Top Info Bar Inside Navbar -->
+      <div
+        class="top-info-bar d-none d-lg-flex justify-content-between align-items-center"
       >
-        <img src="img/darkredNavSmall.png" alt="toggle navbar" />
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Αρχική</a>
-          <a href="about.html" class="nav-item nav-link">Σχετικά με εμάς</a>
-          <a href="service.html" class="nav-item nav-link">Υπηρεσίες</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Σελίδες</a
-            >
-            <div class="dropdown-menu m-0">
-              <a href="open.html" class="dropdown-item">Ώρες λειτουργείας</a>
-              <a href="testimonial.html" class="dropdown-item">Μαρτυρίες</a>
-              <a href="gallery.html" class="dropdown-item"
-                >Συλλογή Φωτογραφιών</a
-              >
-            </div>
-          </div>
-          <a href="contact.html" class="nav-item nav-link">Επικοινωνία</a>
-        </div>
         <a
-          href="contact.html"
-          class="btn btn-primary bg-darkred rounded-0 py-2 px-lg-4 d-none d-lg-block"
-          >Κλείστε ραντεβού ΕΔΩ!<i class="fa fa-arrow-right ms-3"></i
-        ></a>
+          href="https://www.google.gr/maps/place/ΜΑΥΡΕΛΗΣ+ΣΠΥΡΟΣ+-+ΣΥΝΕΡΓΕΙΟ+ΑΥΤΟΚΙΝΗΤΩΝ+ΠΑΤΡΑ/@38.271342,21.7548666,19.22z/data=!4m15!1m8!3m7!1s0x135e49815ebda7df:0x20460907cdf12a03!2zzpXOvM68zrHOvc6_z4XOt867IM6hzr_OkM60zrcgODAsIM6gzqzPhM-BzrEgMjY0IDQy!3b1!8m2!3d38.270887!4d21.7558068!16s%2Fg%2F11l5d2q_d2!3m5!1s0x135e498dc3d78ce9:0xea30fd882766af16!8m2!3d38.2709724!4d21.7558636!16s%2Fg%2F11c60f_2y_?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
+          ><span
+            ><img class="top-nav-img" src="img/white location.png" alt="" />
+            Εμμανουήλ Ροΐδη 80 Πάτρα 264 42</span
+          ></a
+        >
+        <a href="tel:+3032610429105">
+          <span
+            ><img class="top-nav-img" src="img/white phone.png" alt="" />
+            Τηλέφωνο: +30 2610 429 105</span
+          ></a
+        >
+        <a href="mailto:carfixpatra@gmail.com">
+          <span
+            ><img class="top-nav-img" src="img/white email.png" alt="" /> Email:
+            carfixpatra@gmail.com</span
+          ></a
+        >
+        <span
+          ><img class="top-nav-img" src="img/white clock.png" alt="" /> Ωράριο:
+          ΔΕ-ΠΑ: 08:15 - 16:00 ΣΑ: 08:15 - 14:00</span
+        >
+      </div>
+
+      <!-- Main Navbar -->
+      <div class="container d-flex align-items-center">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+          <img
+            class="navImg"
+            id="navbar-logo"
+            src="img/newlogo.png"
+            alt="Logo"
+          />
+        </a>
+
+        <!-- Navbar Toggler for Mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="img/darkredNavSmall.png" alt="toggle navbar" />
+        </button>
+
+        <!-- Navbar Links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ms-auto">
+            <a href="index.html" class="nav-item nav-link active">Αρχική</a>
+            <a href="about.html" class="nav-item nav-link">Σχετικά με εμάς</a>
+            <a href="service.html" class="nav-item nav-link">Υπηρεσίες</a>
+
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Σελίδες</a
+              >
+              <div class="dropdown-menu">
+                <a href="open.html" class="dropdown-item">Ώρες λειτουργείας</a>
+                <a href="testimonial.html" class="dropdown-item">Μαρτυρίες</a>
+                <a href="gallery.html" class="dropdown-item"
+                  >Συλλογή Φωτογραφιών</a
+                >
+              </div>
+            </div>
+
+            <a href="contact.html" class="nav-item nav-link">Επικοινωνία</a>
+          </div>
+
+          <!-- CTA Button -->
+          <a
+            href="contact.html"
+            class="btn btn-primary bg-darkred rounded-0 py-2 px-lg-4 d-none d-lg-block"
+          >
+            Κλείστε ραντεβού ΕΔΩ! <i class="fa fa-arrow-right ms-3"></i>
+          </a>
+        </div>
       </div>
     </nav>
-    <!-- Navbar End -->
+    <!--Navbar End-->
 
     <!-- Page Header Start -->
     <div
@@ -123,7 +175,7 @@
             <li class="breadcrumb-item">
               <a class="text-white" href="#">Σελιδες</a>
             </li>
-            <li class="breadcrumb-item text-primary active" aria-current="page">
+            <li class="breadcrumb-item text-gray active" aria-current="page">
               ωρες λειτουργιας
             </li>
           </ol>
@@ -209,7 +261,7 @@
     <br /><br />
     <!--contactEnd-->
 
-    <hr style="color: darkred; opacity: 200%; height: 2px" />
+    <hr style="color: darkgray; opacity: 200%; height: 2px" />
 
     <!-- Footer Start -->
     <div
@@ -222,19 +274,25 @@
             <h4 class="text-uppercase mb-4">Επικοινωνηστε μαζι μας</h4>
             <div class="d-flex align-items-center mb-2">
               <div class="btn-square bg-dark flex-shrink-0 me-3">
-                <span class="fa fa-map-marker-alt text-primary"></span>
+                <span class="fa fa-map-marker-alt text-gray"></span>
               </div>
               <span>Εμμανουήλ Ροΐδη 80 Πάτρα 264 42</span>
             </div>
             <div class="d-flex align-items-center mb-2">
               <div class="btn-square bg-dark flex-shrink-0 me-3">
-                <span class="fa fa-phone-alt text-primary"></span>
+                <span class="fa fa-phone-alt text-gray"></span>
               </div>
               <span>(+030) 261 042 9105</span>
             </div>
+            <div class="d-flex align-items-center mb-2">
+              <div class="btn-square bg-dark flex-shrink-0 me-3">
+                <span class="fa fa-phone-alt text-gray"></span>
+              </div>
+              <span>(+030) 697 201 9800</span>
+            </div>
             <div class="d-flex align-items-center">
               <div class="btn-square bg-dark flex-shrink-0 me-3">
-                <span class="fa fa-envelope-open text-primary"></span>
+                <span class="fa fa-envelope-open text-gray"></span>
               </div>
               <span>info@mavreliscarfix.gr</span>
             </div>
@@ -252,7 +310,7 @@
             <a
               class="btn btn-lg-square btn-dark text-primary m-1"
               href="https://www.facebook.com/profile.php?id=100011795351706"
-              style="border: 1px solid red"
+              style="border: 1px solid gray"
               ><i class="fab fa-facebook-f"></i
             ></a>
           </div>
@@ -307,7 +365,7 @@
               <br />Modified and made for the service by:
               <a
                 class="border-bottom"
-                href="https://kostasdiam24.github.io"
+                href="https://kostasdiamantopoulosportfolio.framer.website"
                 target="_blank"
                 >Kostas Diamantopoulos</a
               >

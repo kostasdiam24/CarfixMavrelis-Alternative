@@ -6361,6 +6361,12 @@ textarea.form-control-lg {
 .text-primary {
     color:#EB1616 !important
 }
+.text-lightgray {
+    color: lightgray;
+}
+.text-gray {
+    color: gray;
+}
 .text-secondary {
     color:#191C24 !important
 }
@@ -9637,6 +9643,11 @@ textarea.form-control-lg {
     max-width: 500px;
     padding: 0;
 }
+@media (max-width: 770px) {
+    .navImg {
+        width: 60%;
+    }
+}
 .bg-darkred {
     background-color: darkgray;
 }
@@ -9650,7 +9661,7 @@ textarea.form-control-lg {
 }
 
 .smallBoxes {
-    border: solid 3px darkred;
+    border: solid 3px darkgray;
     padding: 15px 2px;
     border-radius: 20%;
 }
@@ -9666,13 +9677,15 @@ textarea.form-control-lg {
 .border-darkred {
     border: 2px solid darkred;
 }
-
+.border-darkgray {
+    border: 2px solid darkgray;
+}
 #extraInServices {
     color: red;
     font-weight: bold;
     background-color: dark;
     text-align: center;
-    border: 1px solid red;
+    border: 1px solid gray;
     border-radius: 15px;
 }
 
@@ -9682,8 +9695,8 @@ textarea.form-control-lg {
 }
 
 .borderForServices {
-    border-radius: 10%;
-    border: 1px solid darkred;
+    border-radius: 20px;
+    border: 1px solid darkgray;
 }
 
 
@@ -9706,7 +9719,7 @@ textarea.form-control-lg {
     .container-xxl2 {
         margin-top: 20px !important;
         border-radius: 0% !important;
-        border: 1px solid darkred !important;
+        border: 1px solid darkgray !important;
     }
     .img-fluid {
         height: 100%;
@@ -9724,7 +9737,7 @@ textarea.form-control-lg {
 }
 
 .gallery { 
-    border: 2px solid red;
+    border: 2px solid gray;
     border-radius: 20px;
     padding: 30px;
     width: 80%;
@@ -9757,7 +9770,7 @@ textarea.form-control-lg {
     justify-content: center;
     background-color: black;
     text-align: center;
-    border: 2px solid darkred;
+    border: 2px solid darkgray;
     padding: 20px;
     border-radius: 10px;
     max-width: 900px;
@@ -9770,8 +9783,8 @@ textarea.form-control-lg {
     width: 100%;
     height: 200px;
     background-color: black;
-    border-top: 2px solid darkred;
-    border-bottom: 2px solid darkred;
+    border-top: 2px solid darkgray;
+    border-bottom: 2px solid darkgray;
     gap: 20px; /* Adds spacing between elements */
 }
 
@@ -9791,7 +9804,7 @@ textarea.form-control-lg {
 }
 
 .contact-button {
-    background-color: darkred;
+    background-color: darkgray;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -9800,7 +9813,7 @@ textarea.form-control-lg {
 }
 
 .contact-button:hover {
-    background-color: red;
+    background-color: gray;
 }
 
 /* Responsive: Stack elements vertically on small screens */
@@ -9841,9 +9854,9 @@ textarea.form-control-lg {
     margin-top: 10px;
 }
 .contact-button {
-    background-color: darkred;
+    background-color: darkgray;
     color: white;
-    border: 1px solid red;
+    border: 1px solid gray;
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
@@ -9853,7 +9866,7 @@ textarea.form-control-lg {
 }
 .contact-button:hover {
     background-color: black;
-    border: 2px solid darkred;
+    border: 2px solid darkgray;
 }
 @media (max-width: 768px) {
     .contact-container {
@@ -9942,7 +9955,7 @@ textarea.form-control-lg {
 }
 .sectionInSrvc .text {
     margin: 70px;
-    border: 2px solid darkred;
+    border: 2px solid darkgray;
     border-radius: 20px;
     width: 50%;
     padding: 20px;
@@ -10013,7 +10026,7 @@ textarea.form-control-lg {
     color: white; /* Λευκό κείμενο */
     padding: 50px 10px;
     text-align: center;
-    border: 2px solid darkred;
+    border: 2px solid darkgray;
     border-radius: 20px;
     width: 80%;
   }
@@ -10030,7 +10043,7 @@ textarea.form-control-lg {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 600;
-    color: red; /* Κόκκινο χρώμα για έμφαση */
+    color: gray; /* Γκρι χρώμα για έμφαση */
   }
   
 
@@ -10107,8 +10120,8 @@ textarea.form-control-lg {
     padding: 20px;
     background-color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-top: 2px solid darkred;
-    border-bottom: 2px solid darkred;
+    border-top: 2px solid darkgray;
+    border-bottom: 2px solid darkgray;
 }
 
 .contentD {
@@ -10129,7 +10142,7 @@ textarea.form-control-lg {
 }
 
 .Ccontainer {
-    border: 2px solid darkred;
+    border: 2px solid darkgray;
     border-radius: 50px;
     font-size: 1.3rem;
     max-width: 800px;
@@ -10138,7 +10151,7 @@ textarea.form-control-lg {
     background: #000;
 }
 .Ctitle {
-    color: red;
+    color: white;
     font-size: 24px;
     font-weight: bold;
 }
@@ -10169,3 +10182,12 @@ textarea.form-control-lg {
         border: none;
     }
 }
+
+
+
+
+.top-nav-img {
+    width: 20px;
+}
+
+
