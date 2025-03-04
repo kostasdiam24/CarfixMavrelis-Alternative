@@ -358,8 +358,9 @@
 
 /* Top Info Bar Styling */
 .top-info-bar {
-    background-color: #575757; /* Light yellow */
+    background-color: black; /* Light yellow */
     color: white;
+    border: 2px solid white;
     font-size: 19px;
     padding: 15px 20px;
     width: 100%;
